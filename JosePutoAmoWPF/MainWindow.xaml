@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JosePutoAmoWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Ejercicio simple con WPF" Height="450" Width="800">
    
     <Grid>
         <Grid.ColumnDefinitions>
@@ -22,10 +22,13 @@
         <Image Grid.Column="1" Name="imgElegida" Width="200" Height="200"
                Source="Imagenes/OCT_1_PeorEnemigo.png"/>
 
-        <DataGrid Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="2" Name="dgMovidas" 
-                  AutoGenerateColumns="False" 
-                  ItemsSource="{Binding Path=Usuarios}" 
+        <DataGrid Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="2" 
+                  Name="dgDibujos" 
+                  AutoGenerateColumns="True" 
                   IsSynchronizedWithCurrentItem="True"
-                  RowDetailsVisibilityMode="Collapsed"/>
+                  RowDetailsVisibilityMode="Collapsed"
+                  IsReadOnly="True"
+                  SelectionMode="Single"
+                  SelectedCellsChanged="dgDibujos_SelectedCellsChanged"/>
     </Grid>
 </Window>

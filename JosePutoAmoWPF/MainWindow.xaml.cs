@@ -24,10 +24,31 @@ namespace JosePutoAmoWPF
         List<string> rutasRecursos;
         string prefijoRuta = "..\\..\\Imagenes\\";
 
+        List<DTODibujos> listaDibujos;
+
         public MainWindow()
         {
             InitializeComponent();
             CargarImagenes();
+            InicializarLista();
+            PasarListaDatagrid();
+        }
+
+        private void PasarListaDatagrid()
+        {
+            this.dgDibujos.ItemsSource = listaDibujos;
+        }
+
+        private void InicializarLista()
+        {
+            this.listaDibujos = new List<DTODibujos>();
+
+            for(int i=0; i<this.rutasRecursos.Count; i++)
+            {
+                string nombre = this.rutasRecursos[i].Substring(prefijoRuta.Length);
+                this.listaDibujos.Add(new DTODibujos(i, nombre, rutasRecursos[i], "Dibujo pruebas", 
+                    "Jorge Alvarez Ceñal"));
+            }
         }
 
         private void CargarImagenes()
@@ -49,6 +70,12 @@ namespace JosePutoAmoWPF
         {
             int indice = (int)Math.Round(this.sliderImagenes.Value);
             imgElegida.Source = new BitmapImage(new Uri(this.prefijoRuta + rutasRecursos[indice], UriKind.Relative));
+            this.dgDibujos.SelectedIndex = indice;
+        }
+
+        private void dgDibujos_SelectedCellsChanged(object sender, SelectedCellsChangedEventArgs e)
+        {
+            this.sliderImagenes.Value = this.dgDibujos.SelectedIndex;
         }
     }
 }
