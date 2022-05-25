@@ -1,0 +1,31 @@
+﻿<Window x:Class="JosePutoAmoWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JosePutoAmoWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+   
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Slider Grid.Column="0" Name="sliderImagenes" Width="100" Minimum="0" Maximum="3" VerticalAlignment="Center"
+                Value="0"  ValueChanged="SliderImagenes_ValueChanged"/>
+        <Image Grid.Column="1" Name="imgElegida" Width="200" Height="200"
+               Source="Imagenes/OCT_1_PeorEnemigo.png"/>
+
+        <DataGrid Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="2" Name="dgMovidas" 
+                  AutoGenerateColumns="False" 
+                  ItemsSource="{Binding Path=Usuarios}" 
+                  IsSynchronizedWithCurrentItem="True"
+                  RowDetailsVisibilityMode="Collapsed"/>
+    </Grid>
+</Window>

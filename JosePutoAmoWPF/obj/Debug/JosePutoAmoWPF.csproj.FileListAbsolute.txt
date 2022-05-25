@@ -1,0 +1,15 @@
+C:\Users\Jorge\source\repos\JosePutoAmoWPF\JosePutoAmoWPF\bin\Debug\JosePutoAmoWPF.exe.config
+C:\Users\Jorge\source\repos\JosePutoAmoWPF\JosePutoAmoWPF\bin\Debug\JosePutoAmoWPF.exe
+C:\Users\Jorge\source\repos\JosePutoAmoWPF\JosePutoAmoWPF\bin\Debug\JosePutoAmoWPF.pdb
+C:\Users\Jorge\source\repos\JosePutoAmoWPF\JosePutoAmoWPF\obj\Debug\JosePutoAmoWPF.csprojAssemblyReference.cache
+C:\Users\Jorge\source\repos\JosePutoAmoWPF\JosePutoAmoWPF\obj\Debug\MainWindow.g.cs
+C:\Users\Jorge\source\repos\JosePutoAmoWPF\JosePutoAmoWPF\obj\Debug\App.g.cs
+C:\Users\Jorge\source\repos\JosePutoAmoWPF\JosePutoAmoWPF\obj\Debug\JosePutoAmoWPF_MarkupCompile.cache
+C:\Users\Jorge\source\repos\JosePutoAmoWPF\JosePutoAmoWPF\obj\Debug\JosePutoAmoWPF_MarkupCompile.lref
+C:\Users\Jorge\source\repos\JosePutoAmoWPF\JosePutoAmoWPF\obj\Debug\MainWindow.baml
+C:\Users\Jorge\source\repos\JosePutoAmoWPF\JosePutoAmoWPF\obj\Debug\JosePutoAmoWPF.g.resources
+C:\Users\Jorge\source\repos\JosePutoAmoWPF\JosePutoAmoWPF\obj\Debug\JosePutoAmoWPF.Properties.Resources.resources
+C:\Users\Jorge\source\repos\JosePutoAmoWPF\JosePutoAmoWPF\obj\Debug\JosePutoAmoWPF.csproj.GenerateResource.cache
+C:\Users\Jorge\source\repos\JosePutoAmoWPF\JosePutoAmoWPF\obj\Debug\JosePutoAmoWPF.csproj.CoreCompileInputs.cache
+C:\Users\Jorge\source\repos\JosePutoAmoWPF\JosePutoAmoWPF\obj\Debug\JosePutoAmoWPF.exe
+C:\Users\Jorge\source\repos\JosePutoAmoWPF\JosePutoAmoWPF\obj\Debug\JosePutoAmoWPF.pdb
